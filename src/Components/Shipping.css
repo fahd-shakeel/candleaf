@@ -1,0 +1,414 @@
+/***pre used classes*/
+.shipping #head{
+    display: none;
+}
+.shipping input{
+    margin-top:0.25em;
+    margin-bottom:0.25em;
+    height: 2.5em;
+    border: none;
+}
+
+.shipping .input-label{
+    display: flex;
+}
+
+.shipping .input-label label{
+    margin-left:0.5em;
+    align-content: center;
+}
+
+.line{
+    opacity: 20%;
+    border-bottom: 2px solid #56B280;
+}
+
+/*** styles */
+
+.shipping{
+    width:100%;
+    /* border:2px solid red; */
+    display: flex;
+}
+
+.shipping .left{
+    background-color: white;
+    width:50%;
+    /* border:2px solid blue; */
+}
+
+.shipping .right{
+    background-color: #F2F2F2;
+    /* border:2px solid blue; */
+    width:50%;
+}
+
+.shipping .left .left-content{
+    width:70%;
+    margin:0 4em 0 auto;
+    /* border:2px solid aqua; */
+}
+
+.shipping .right .right-content{
+    width:70%;
+    margin:3em auto 0 4em;
+    /* border:2px solid red; */
+}
+
+
+/***** left area styles */
+
+.shipping .left .left-content #details-flow{
+    display: flex;
+    align-content: center;
+    /* border:2px solid brown;  */
+    margin-bottom: 2em;
+    margin-top:1em;
+}
+
+.shipping .left .left-content #details-flow #cart{
+    color:#56B280;
+}
+
+.shipping .left .left-content #details-flow #details{
+    color:#56B280;
+}
+
+.shipping .left .left-content #details-flow #shipping{
+    color: black;
+}
+
+.shipping .left .left-content #details-flow #payment{
+    color:#616161
+}
+
+
+.shipping .left .left-content #details-flow p{
+    margin-top:auto;
+    margin-bottom:auto;
+    font-family: "Roboto";
+    font-weight:400;
+    font-size:1em;
+    margin-right:0.25em;
+}
+
+.shipping .left .left-content #form-area{
+    margin-top:3em;
+    margin-bottom:3em;
+    border:1px solid rgba(86, 178, 128, 0.2);
+    border-radius: 7px;
+    padding:0.5em;
+}
+
+.shipping .left .left-content .form .contact {
+    display: flex;
+    align-items: center;
+    /* border:2px solid blue; */
+    /* margin-bottom:0.25em; */
+    /* padding:1em; */
+}
+
+.shipping .left .left-content .form .contact p{
+    /* border:2px solid aqua; */
+    margin:auto;
+    font-family: "Poppins";
+    font-weight:300;
+    font-size:0.875em;
+    color:#818181;
+}
+
+.shipping .left .left-content .form .contact input{
+    width:85%;
+}
+
+.shipping .left .left-content .form .contact input::placeholder{
+    color:#56B280;
+    margin-right:0.5em;
+    font-family: "Poppins";
+    font-size: 0.875em;
+    font-weight:300;
+    text-align:right;
+}
+
+.shipping .left .left-content .form .contact input:focus{
+    outline:none;
+}
+
+.shipping .left .left-content .form .ship{
+    align-items: center;
+    display: flex;
+    /* border:2px solid blue; */
+    /* margin-top:0.25em; */
+}
+
+.shipping .left .left-content .form .ship p{
+    /* border:2px solid aqua; */
+    margin:auto;
+    font-family: "Poppins";
+    font-weight:300;
+    font-size:0.875em;
+    color:#818181;
+}
+
+.shipping .left .left-content .form .ship input{
+    width: 85%;
+}
+
+.shipping .left .left-content .form .ship input::placeholder{
+    color:#56B280;
+    margin-right:0.5em;
+    font-family: "Poppins";
+    font-size: 0.875em;
+    font-weight:300;
+    text-align:right;
+}
+
+.shipping .left .left-content .form .ship input:focus{
+    outline:none;
+}
+
+/* .shipping .left .left-content .shipping-method{
+    padding:1em;
+} */
+
+.shipping .left .left-content .shipping-method #shipping-method-heading{
+    font-family: "Roboto";
+    font-weight:500;
+    font-size:1.25em;
+}
+
+.shipping .left .left-content .shipping-method #shipping-method-body{
+    display: flex;
+    /* border:2px solid red; */
+    align-items: center;
+    padding:0.5em;
+    margin-bottom:4em;
+    border:1px solid rgba(86, 178, 128, 0.2);
+    border-radius: 7px;
+}
+
+.shipping .left .left-content .shipping-method #shipping-method-body #radio-button{
+
+}
+
+.shipping .left .left-content .shipping-method #shipping-method-body label{
+    margin-left:1em;
+    /* border:2px solid blue; */
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size:0.875em;
+}
+
+.shipping .left .left-content .shipping-method #shipping-method-body #free-tag{
+    text-align: right;
+    margin:auto 1em auto auto;
+    font-family: "Roboto";
+    font-weight:600;
+    font-size:0.875em;
+}
+
+
+
+/* back and Go-To-Payment division */
+
+.shipping .left .left-content .cart-and-shopping{
+    display: flex;
+    /* margin-top:1em; */
+    margin-bottom:3em;
+    justify-content: space-between;
+    /* border:2px solid blueviolet; */
+}
+
+.shipping .left .left-content .cart-and-shopping p{
+    font-family: "Roboto";
+    font-size: 1.125em;
+    font-weight: 400;
+    margin:auto 0;
+    
+}
+
+.shipping .left .left-content .cart-and-shopping a{
+    align-content: center;
+    /* border:2px solid grey; */
+    color: #56B280;
+}
+
+.shipping .left .left-content .cart-and-shopping #btn-shipping{
+    /* border:2px solid blue; */
+    background-color: #56B280;
+    border: none;
+    color:white;
+    width:100%;
+}
+
+.shipping .left .left-content .cart-and-shopping #link-of-btn{
+    width:50%;
+}
+
+.shipping .right .right-content .image-and-text{
+    display: flex;
+    /* border:2px solid blue; */
+    margin-bottom:3em;
+}
+
+.shipping .right .right-content .image-and-text #text-heading{
+    display: flex;
+    
+    flex-direction: column;
+    /* border:2px solid brown; */
+    text-align: left;
+    /* margin-left:3em; */
+    margin:auto auto auto 3em;
+    align-content: center;
+    padding-top:1em;
+}
+
+.shipping .right .right-content .image-and-text img{
+    width:10em;
+    height:auto;
+    background-color:#F7F8FA;
+}
+
+.shipping .right .right-content .image-and-text #product-name{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size:1em;
+    /* border:2px solid red; */
+}
+
+.shipping .right .right-content .image-and-text #product-price{
+    font-family: "Poppins";
+    font-weight:600;
+    font-size:1.125em;
+    color:#56B280;
+    /* border:2px solid red; */
+}
+
+/* .shipping .right .right-content .line{
+    opacity: 20%;
+    border-bottom: 2px solid #56B280;
+} */
+
+.shipping .right .right-content .coupon{
+    justify-content: space-between;
+    margin:1em 0 1em 0;
+    
+}
+
+.shipping .right .right-content .coupon input{
+    width: 69%;
+}
+
+.shipping .right .right-content .coupon button{
+    width:29%;
+    background-color: #A8A8A8;
+    border:none;
+    height:2.5em;
+    /* border:2px solid red; */
+    margin-top:0.25em;
+}
+
+.shipping .right .right-content .subtotal{
+    display: flex;
+    justify-content: space-between;
+    margin-top:1em;
+}
+
+.shipping .right .right-content .subtotal p{
+    font-family: "Roboto";
+    font-size: 0.875em;
+    font-weight:600;
+    color:#616161;
+}
+
+.shipping .right .right-content .subtotal #product-price{
+    color:black
+
+}
+
+.shipping .right .right-content .shipping{
+    display: flex;
+    justify-content: space-between;
+    /* border:2px solid blue; */
+    margin-bottom:2em;
+}
+
+.shipping .right .right-content .shipping p{
+    font-family: "Roboto";
+    font-size:0.875em;
+    font-weight:500;
+    color:#616161;
+}
+
+.shipping .right .right-content .shipping #shipping-price{
+    color:black;
+}
+
+/* .shipping .right .right-content .shipping{
+
+} */
+
+.shipping .right .right-content .total-price{
+    display: flex;
+    justify-content: space-between;
+    margin-top:1em;
+}
+
+.shipping .right .right-content .total-price p{
+    font-family: "Roboto";
+    font-size:0.875em;
+    font-weight:500;
+    color:#616161;
+}
+
+.shipping .right .right-content .total-price #product-price{
+    color:black;
+    font-size: 1.5em;;
+}
+
+@media (max-width:760px){
+    .shipping{
+        display: block;
+    }
+    .shipping #head{
+        background-color: #F2F2F2;
+        display:flex;
+        justify-content: space-around;
+        padding:1em;
+        align-items: center;
+        /* border:2px solid red; */
+    }
+    .shipping #head #heading{
+        color: #56B280;
+        font-weight: 400;
+        /* border: 2px solid blue; */
+    }
+    .shipping #head p{
+        margin:0;
+        font-size: 1.25em;
+        /* border:2px solid blue; */
+    }
+    .shipping .left{
+        width:95%;
+        /* border:2px solid red; */
+        margin:0 auto;
+    }
+    .shipping .right{
+        width:95%;
+        display: none;
+    }
+    .shipping .left .left-content{
+        width:100%;
+    }
+    .shipping .left .left-content .cart-and-shopping{
+        flex-direction: column-reverse;
+        /* border:2px solid red; */
+    }
+    .shipping .left .left-content .cart-and-shopping #link-of-btn{
+        width:100%;
+        margin:1.5em auto;
+    }
+    .shipping .left .left-content .cart-and-shopping p{
+        text-align: center;
+    }
+}

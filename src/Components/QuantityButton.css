@@ -1,0 +1,42 @@
+.flex-btn{
+    display: flex;
+    justify-content: space-evenly;
+    width:auto;
+    border:1px solid #56B280;
+    /* border:2px solid red; */
+}
+
+.flex-btn #dec-btn{
+    border-style: none;
+    width:25px;
+    height:25px;
+    /* border-right:1px solid #56B280; */
+    background-color: white;
+    align-items: center;
+    color: #56B280;
+}
+
+.flex-btn #dec-btn p{
+    padding-left:5px;
+}
+
+.flex-btn #value{
+    margin:0 2px 0 2px;
+    align-items: center;
+    width:25px;
+    height:25px;
+}
+
+.flex-btn #inc-btn{
+    border-style: none;
+    width:25px;
+    height:25px;
+    /* border-left:1px solid #56B280; */
+    background-color: white;
+    align-items: center;
+    color: #56B280;
+}
+
+.flex-btn #inc-btn p{
+    padding-right:5px;
+}

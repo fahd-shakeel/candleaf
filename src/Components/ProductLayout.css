@@ -1,0 +1,55 @@
+.product-layout{
+    width: 225px;
+    height:auto;
+    margin:0.5em;
+    /* border:2px solid red; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+}
+
+.product-layout .image{
+    background-color:#F7F8FA;
+}
+.product-layout .image img{
+    width:100%;
+}
+
+.product-layout .description-of-product{
+    width:90%;
+    margin:0 auto;
+    /* border:2px solid orange; */
+}
+
+.product-layout .name-of-product{
+    margin:0.25em;
+    font-family:"Poppin", sans-serif;
+    font-weight: 500;
+    font-size:15.5px;    
+    color:black;
+}
+
+.product-layout .price-of-product{
+    margin:0.25em;
+    text-align:end;
+    font-family: "Roboto";
+    color:#56B280;
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+
+@media (max-width:760px){
+    .product-layout{
+        margin:0.5em 0;
+        width:95%;
+    }
+
+    .product-layout .image{
+        height:200px;
+        overflow: hidden;
+        /* border:2px solid green; */
+    }
+    .product-layout .image img{
+        /* height: 200px; */
+        overflow: hidden;
+    }
+    
+}

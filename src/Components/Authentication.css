@@ -1,0 +1,383 @@
+/***pre used classes*/
+.authentication #head{
+    display: none;
+}
+.authentication input{
+    margin-top:0.25em;
+    margin-bottom:0.25em;
+    height: 2.5em;
+    border: 1px solid #56B280; 
+}
+
+.authentication .input-label{
+    display: flex;
+}
+
+.authentication .input-label label{
+    margin-left:0.5em;
+    align-content: center;
+}
+
+/*** styles */
+
+.authentication{
+    width:100%;
+    /* border:2px solid red; */
+    display: flex;
+}
+
+.authentication .left{
+    background-color: white;
+    width:50%;
+    /* border:2px solid blue; */
+}
+
+.authentication .right{
+    background-color: #F2F2F2;
+    /* border:2px solid blue; */
+    width:50%;
+}
+
+.authentication .left .left-content{
+    width:70%;
+    margin:0 4em 0 auto;
+    /* border:2px solid aqua; */
+}
+
+.authentication .right .right-content{
+    width:70%;
+    margin:3em auto 0 4em;
+    /* border:2px solid red; */
+}
+
+
+/***** left area styles */
+
+.authentication .left .left-content #details-flow{
+    display: flex;
+    align-content: center;
+    /* border:2px solid brown;  */
+    margin-bottom: 2em;
+    margin-top:1em;
+}
+
+.authentication .left .left-content #details-flow #cart{
+    color:#56B280;
+}
+
+.authentication .left .left-content #details-flow #details{
+    color: black;
+}
+
+.authentication .left .left-content #details-flow #shipping{
+    color:#616161
+}
+
+.authentication .left .left-content #details-flow #payment{
+    color:#616161
+}
+
+.authentication .left .left-content #details-flow p{
+    margin-top:auto;
+    margin-bottom:auto;
+    font-family: "Roboto";
+    font-weight:400;
+    font-size:1em;
+    margin-right:0.25em;    
+}
+
+
+
+.authentication .left .form .contact{
+    /* border:2px solid brown; */
+}
+
+.authentication .left .form .contact #contact-heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.authentication .left .form .contact #contact-heading p{
+    margin:0;
+}
+
+.authentication .left .form .contact #contact-heading #title{
+    font-family: "Roboto";
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+.authentication .left .form .contact #contact-heading #contact-login{
+    display: flex;
+}
+
+.authentication .left .form .contact #contact-heading #contact-login a{
+    align-content: center;
+    text-decoration: none;
+}
+
+.authentication .left .form .contact #contact-heading #contact-login p{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size:0.875em;
+    align-content: center;
+    /* border:2px solid red; */
+    height:auto;
+}
+
+.authentication .left .form .contact #contact-heading #contact-login #login{
+    color:#56B280;
+    margin-left:0.5em;
+}
+
+.authentication .left .form .contact #contact-input{
+    width:100%;
+    /* height: 2.5em;
+    border: 1px solid #56B280;  */
+}
+
+.authentication .form #shipping{
+    margin-top:0.5em;
+    /* border:2px solid brown; */
+}
+
+.authentication .form #shipping #title{
+    font-family: "Roboto";
+    font-size:1.25em;
+    font-weight: 400;
+}
+
+.authentication .form #shipping #name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.authentication .form #shipping #name #first-name{
+    width:49%
+}
+
+.authentication .form #shipping #name #last-name{
+    width:49%;
+}
+
+.authentication .form #shipping #address{
+    width:100%;
+}
+
+.authentication .form #shipping #shipping-note{
+    width:100%;
+}
+
+.authentication .form #shipping #address-other{
+    display: flex;
+    justify-content: space-between;
+}
+
+.authentication .form #shipping #address-other #city{
+    width:49%;
+}
+
+.authentication .form #shipping #address-other #postal-code{
+    width:49%;
+}
+
+.authentication .form #shipping #country{
+    width:100%;
+}
+
+.authentication .left .left-content .cart-and-shopping{
+    display: flex;
+    /* margin-top:1em; */
+    margin-bottom:1em;
+    justify-content: space-between;
+    /* border:2px solid blueviolet; */
+}
+
+.authentication .left .left-content .cart-and-shopping p{
+    font-family: "Roboto";
+    font-size: 1.125em;
+    font-weight: 400;
+    margin:auto 0;
+    
+}
+
+.authentication .left .left-content .cart-and-shopping a{
+    align-content: center;
+    /* border:2px solid grey; */
+    color: #56B280;
+}
+
+.authentication .left .left-content .cart-and-shopping #btn-shipping{
+    /* border:2px solid blue; */
+    background-color: #56B280;
+    border: none;
+    color:white;
+    width:100%;
+}
+
+.authentication .left .left-content .cart-and-shopping #link-of-btn{
+    width:50%;
+}
+
+.authentication .right .right-content .image-and-text{
+    display: flex;
+    /* border:2px solid blue; */
+    margin-bottom:3em;
+}
+
+.authentication .right .right-content .image-and-text #text-heading{
+    display: flex;
+    
+    flex-direction: column;
+    /* border:2px solid brown; */
+    text-align: left;
+    /* margin-left:3em; */
+    margin:auto auto auto 3em;
+    align-content: center;
+    padding-top:1em;
+}
+
+.authentication .right .right-content .image-and-text img{
+    width:10em;
+    height:auto;
+    background-color:#F7F8FA;
+}
+
+.authentication .right .right-content .image-and-text #product-name{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size:1em;
+    /* border:2px solid red; */
+}
+
+.authentication .right .right-content .image-and-text #product-price{
+    font-family: "Poppins";
+    font-weight:600;
+    font-size:1.125em;
+    color:#56B280;
+    /* border:2px solid red; */
+}
+
+.authentication .right .right-content .line{
+    opacity: 20%;
+    border-bottom: 2px solid #56B280;
+}
+
+.authentication .right .right-content .coupon{
+    justify-content: space-between;
+    margin:1em 0 1em 0;
+    
+}
+
+.authentication .right .right-content .coupon input{
+    width: 69%;
+}
+
+.authentication .right .right-content .coupon button{
+    width:29%;
+    background-color: #A8A8A8;
+    border:none;
+    height:2.5em;
+    /* border:2px solid red; */
+    margin-top:0.25em;
+}
+
+.authentication .right .right-content .subtotal{
+    display: flex;
+    justify-content: space-between;
+    margin-top:1em;
+}
+
+.authentication .right .right-content .subtotal p{
+    font-family: "Roboto";
+    font-size: 0.875em;
+    font-weight:500;
+    color:#616161;
+}
+
+.authentication .right .right-content .subtotal #product-price{
+    color:black
+}
+
+.authentication .right .right-content .shipping{
+    display: flex;
+    justify-content: space-between;
+    /* border:2px solid blue; */
+    margin-bottom:2em;
+}
+
+.authentication .right .right-content .shipping p{
+    font-family: "Roboto";
+    font-size:0.875em;
+    font-weight:500;
+    color:#616161;
+}
+
+/* .authentication .right .right-content .shipping{
+
+} */
+
+.authentication .right .right-content .total-price{
+    display: flex;
+    justify-content: space-between;
+    margin-top:1em;
+}
+
+.authentication .right .right-content .total-price p{
+    font-family: "Roboto";
+    font-size:0.875em;
+    font-weight:500;
+    color:#616161;
+}
+
+.authentication .right .right-content .total-price #product-price{
+    color:black;
+    font-size: 1.5em;;
+}
+
+@media (max-width:760px){
+    .authentication{
+        display: block;
+    }
+    .authentication #head{
+        background-color: #F2F2F2;
+        display:flex;
+        justify-content: space-around;
+        padding:1em;
+        align-items: center;
+        /* border:2px solid red; */
+    }
+    .authentication #head #heading{
+        color: #56B280;
+        font-weight: 400;
+        /* border: 2px solid blue; */
+    }
+    .authentication #head p{
+        margin:0;
+        font-size: 1.25em;
+        /* border:2px solid blue; */
+    }
+    .authentication .left{
+        width:95%;
+        /* border:2px solid red; */
+        margin:0 auto;
+    }
+    .authentication .right{
+        width:95%;
+        display: none;
+    }
+    .authentication .left .left-content{
+        width:100%;
+    }
+    .authentication .left .left-content .cart-and-shopping{
+        flex-direction: column-reverse;
+        /* border:2px solid red; */
+    }
+    .authentication .left .left-content .cart-and-shopping #link-of-btn{
+        width:100%;
+        margin:1.5em auto;
+    }
+    .authentication .left .left-content .cart-and-shopping p{
+        text-align: center;
+    }
+}

@@ -1,0 +1,56 @@
+/**************table-body************/
+.cart .checkout-products .table tbody td{
+    align-content: center;
+}
+
+.cart .checkout-products .table tbody #price{
+    font-family: "Roboto";
+    font-weight:400;
+    font-size: 1.125em;
+    
+}
+
+.cart .checkout-products .table tbody #total{
+    font-family: "Roboto";
+    font-weight:400;
+    font-size: 1.125em;
+}
+
+.cart .checkout-products .table tbody #product-details #quantity-heading{
+    font-family: "Roboto";
+    font-weight:400;
+    font-size: 1.125em;
+}
+/**************end-table-body*****************/
+
+.cart .checkout-products .table tbody #product-details #quantity-area{
+    display: none;
+}
+
+.cart .checkout-products .table tbody #product-details{
+    /* border:2px solid blue; */
+}
+
+@media (max-width:760px){
+    .cart .checkout-products .table tbody #product-details{
+        /* border:2px solid red; */
+    }
+
+    .cart .checkout-products .table tbody #product-details #quantity-area{
+        /* border:2px solid blue; */
+        display: block;
+        text-align: center;
+        width:50%;
+        margin:0 0 0 auto;
+    }
+
+    /* .cart .checkout-products .table tbody #product-details #quantity-heading{
+        text-align: center;
+
+    } */
+    .cart .checkout-products .table tbody #price{
+    width:20%;
+    /* border:2px solid brown; */
+    text-align: center;
+    }
+}

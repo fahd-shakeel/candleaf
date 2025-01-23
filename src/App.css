@@ -1,0 +1,31 @@
+.App{
+    margin:0 auto; 
+}
+
+.roboto{
+    font-family:"Roboto";
+}
+
+.poppins{
+    font-family: "Poppins";
+}
+
+.reg{
+    font-weight: 400;
+}
+
+.med{
+    font-weight: 500;
+}
+
+.semi-bold{
+    font-weight:600
+}
+
+.bold{
+    font-weight:700
+}
+
+.blue-accent{
+    accent-color: blue;
+}

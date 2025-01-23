@@ -1,0 +1,344 @@
+/* body{
+    background-image: url("../assets/images/bg-image.svg");
+    background-repeat: no-repeat;
+    background-size:cover; 
+} */
+
+a{
+    text-decoration: none;
+}
+
+.home{
+    width:100%;
+}
+.background-image{
+    width:100%;
+    margin:0 auto;
+    /* display: block; */
+}
+
+.transparent-card{
+    position:absolute;
+    width:50%;
+    height:50%;
+    border:2px solid #F7F8FA;
+    background-color: #F7F8FA;
+    top:28%;
+    left:25%;
+    opacity:80%;
+    /* transform:translate(0%,-20%) */
+    /* margin:0 auto; */
+}
+
+.title{
+    /* border:2px solid red; */
+    width:80%;
+    margin:0 auto;
+    margin-top:10%;
+}
+
+.title #title-heading{
+    font-family: "poppins";
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin-bottom:0;
+    
+}
+
+.title #title-para{
+    font-family:"Helvetica";
+    font-size: 20px;
+    text-align:center;
+    margin:0.5em;
+}
+
+.transparent-card #btn-background-image{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:1.5em;
+    width:30% auto;
+    font-size: 17px;
+    font-family: "Roboto";
+    background-color: #56b280;
+    border-color:  #56b280;
+
+}
+
+.transparent-card #btn-background-image a{
+    text-decoration:none;
+    color: white;
+}
+
+.transparent-card button:hover{
+    background-color: #56b280;
+    border-color: #56b280;
+    color: white;
+}
+
+/* products section */
+
+.products-area{
+    width:100%;
+}
+
+.products-area #title-of-products{
+    margin-top:2em;
+    text-align: center;
+    font-family: "poppins";
+
+}
+
+.products-area #title-of-products h3{
+    margin:0;
+    font-size:38.5px;
+}
+
+.products-area #title-of-products p{
+    margin-top:0.5em;
+    font-size: 20px;
+    color: #5E6E89;
+}
+
+.products-area .product-list{
+    width:80%;
+    margin:0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-top:1em;
+    margin-bottom: 1em;
+    /* border:2px solid red; */
+}
+
+/* clean and fragrant soy wax section styles  */
+
+.benefits{
+    width:100%;
+    background-color: #F7F8FA;
+}
+
+.benefits .benefits-section{
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+    height:auto;
+    /* border:2px solid red; */
+    width:80%;
+}
+
+.benefits .description-section{
+    /* border:2px solid blue; */
+    width:50%;
+    height:auto;
+    padding-bottom: 8em;
+}
+
+.benefits .description-section .description-header{
+    width:70%;
+    margin-top:5em;
+    margin-bottom:2em;
+
+}
+
+.benefits .description-section .description-header h2{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 51.5px;
+}
+
+.benefits .description-section .description-header p{
+    font-size: 13;
+    font-family: "Poppins",sans-serif;
+    font-weight:200;
+    color:#56B280;
+}
+
+.benefits .description-section .benefits-points{
+    /* border:2px solid yellow; */
+    margin-bottom:4em;
+}
+
+.benefits .description-section .benefits-points div{
+    display: flex;
+    align-items: center;
+    /* border:2px solid green; */
+    align-content:middle;
+}
+
+/* .benefits .description-section .benefits-points div img{
+    
+    border: 2px solid red;
+} */
+
+.benefits .description-section .benefits-points div p{
+    font-size:16px;
+    font-family:"Poppins", sans-serif;
+    padding-top:1em;
+    padding-left:1em;
+}
+
+.benefits .image-section{
+    /* border:2px solid blue; */
+    width:50%;
+    display: flex;
+    justify-content: center;
+}
+
+.benefits .image-section #benefits-section-image{
+    width:90%;
+
+}
+
+.benefits .description-section button{
+    background-color: #56B280;
+    color:white;
+    border-color: #56b280;
+    width:230.5px;
+    font-family: "Roboto";
+    font-size:13px;
+}
+
+/********** testimonial section styles */
+
+.testimonial{
+    width:100%;
+    /* border:2px solid red; */
+    background-color: rgba(86, 178, 128,0.1);
+    padding-top:2em;
+    padding-bottom:4em;
+}
+
+.testimonial .testimonial-section{
+    width:80%;
+    /* border:2px solid red; */
+    margin:0 auto;
+
+}
+.testimonial .testimonial-section .testimonial-description{
+    /* border:2px solid blue; */
+    /* padding-bottom:2em; */
+    margin:2em auto;
+    text-align: center
+}
+
+.testimonial .testimonial-section .testimonial-description h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.testimonial .testimonial-section .testimonial-description p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size:15.5px;
+    color:#5E6E89;
+}
+
+.testimonial .testimonial-section .cards-section{
+    /* border:2px solid green; */
+    display: flex;
+    justify-content:space-between;
+}
+
+/********* top selling products style */
+
+/* .popular-section{
+    border:2px solid red;
+} */
+.popular-section .popular-area{
+    /* border:2px solid red; */
+    width:80%;
+    margin:3em auto;
+}
+
+.popular-section .popular-area .popular-heading{
+    /* border:2px solid blue; */
+    text-align:center;
+}
+
+.popular-section .popular-area .popular-heading h3{
+    font-family: "Poppins",sans-serif;
+    font-size:32px;
+}
+
+.popular-section .popular-area .popular-heading p{
+    font-family: "Poppins",sans-serif;
+    font-size:32px;
+    color:#5E6E89;
+}
+
+.popular-section .popular-area .product-list{
+    /* border:2px solid green; */
+    margin:0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-top:2em;
+    margin-bottom: 1em;
+}
+
+@media (max-width:760px){
+    .background-image{
+        /* width:90vw; */
+        position:relative;
+        width:100%;
+        height: 90vh;
+        overflow: hidden;
+        object-fit: cover;
+        object-position: 25% 25%;
+        background-position: center center;
+    }
+    .transparent-card{
+        width:95%;
+        top:20%;
+        left:2.5%;
+        height:300px;
+    }
+    .products-area .product-list{
+        width:95%;
+        height: auto;
+        margin-bottom:2em;
+        
+    }
+
+    .benefits .benefits-section{
+        /* border:2px solid orange; */
+        width:95%;
+        flex-direction: column;
+    }
+    .benefits .description-section{
+        width:100%;
+        /* border:2px solid red; */
+    }
+
+    .benefits .description-section .description-header{
+        width:100%;
+        text-align: center;
+        margin:1em 0 1em 0;
+    }
+    .benefits .image-section #benefits-section-image{
+        display: none;
+    }
+
+    .benefits .description-section{
+        padding-bottom:4em;
+    }
+    .benefits .description-section .benefits-points{
+        /* border:2px solid red; */
+        margin-bottom:2em;
+    }
+    .benefits .description-section button{
+        width:100%;
+        margin-bottom:0;
+    }
+    .testimonial .testimonial-section .cards-section{
+       /* border:2px solid green; */
+        overflow: scroll;
+        scrollbar-width: none;
+    }
+    
+
+}

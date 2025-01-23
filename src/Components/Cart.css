@@ -1,0 +1,166 @@
+.right{
+    text-align: right;
+}
+
+.cart .cart-heading{
+    margin:3em auto;
+    text-align: center;
+    width:80%;
+    /* border:2px solid red; */
+}
+
+.cart .cart-heading h6{
+    font-family: "Poppins";
+    font-size: 1.625em;
+    font-weight: 500;
+    margin:1em;
+}
+
+.cart .cart-heading p{
+    color:#56B280;
+    font-family: "Roboto";
+    font-size: 1.125em;
+    font-weight: 400;
+}
+
+.cart .checkout-products{
+    /* border:2px solid red; */
+    margin:0 auto;
+    width:80%;
+}
+
+.cart .checkout-products .table #product-details{
+    /* border:2px solid blue; */
+    display: flex;
+}
+
+.cart .checkout-products .table #product-details img{
+    width:10em;
+    height:8.125em;
+    background-color: #F7F8FA;
+}
+
+.cart .checkout-products .table #product-details #product-desc{
+    margin-left:1em;
+}
+
+.cart .checkout-products .table #product-details #product-desc #title-of-product{
+    font-family: "Poppins";
+    font-size:1.625em;
+    font-weight: 400;
+}
+
+.cart .checkout-products .table #product-details #product-desc #remove-link{
+    color: #56B280;
+    font-family: "Roboto";
+    font-size:1.125em;
+    font-weight: 400;
+}
+
+.cart .checkout-products .table thead th{
+    font-family: "Roboto";
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
+
+
+/*******************table-body*************/
+.cart .checkout-products .table tbody td{
+    align-content: center;
+}
+
+.cart .checkout-products .table tbody #price{
+    font-family: "Roboto";
+    font-weight:400;
+    font-size: 1.125em;
+}
+
+.cart .checkout-products .table tbody #total{
+    font-family: "Roboto";
+    font-weight:400;
+    font-size: 1.125em;
+}
+
+/* Sub Total and Checkout Button */
+
+.cart .sub-total-and-checkout{
+    width:80%;
+    margin:0 auto;
+    display: flex;
+    justify-content: right;
+    margin-top:3em;
+    /* border:2px solid red; */
+}
+
+.cart .sub-total-and-checkout .sub-total{
+    /* border:2px solid violet; */
+    margin-right:2em;
+    margin-bottom:5em; 
+}
+
+.cart .sub-total-and-checkout .sub-total #desc{
+    display: flex;
+    justify-content: right;
+    /* border:2px solid blue; */
+}
+
+.cart .sub-total-and-checkout .sub-total #tax-shipping{
+    color:#9E9E9E;
+    font-family: "Roboto";
+    font-size: 1em;
+    font-weight:300
+}
+
+.cart .sub-total-and-checkout .sub-total #desc p{
+    margin:auto 2em;
+    font-family: "Roboto";
+    font-weight:400;
+    font-size:1.25em;
+}
+
+.cart .sub-total-and-checkout .checkout button{
+    background-color: #56B280;
+    color:white;
+    width:11em;
+    height:2.5em;
+    font-family: "Roboto";
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+.cart .checkout-products .table thead #price, #quantity, #total{
+    text-align: center;
+}
+
+@media (max-width:760px){
+    .cart .checkout-products{
+        /* border:2px solid red; */
+        width:95%;
+    }
+
+    .cart .checkout-products .table #quantity, #total{
+        display: none;
+    }
+
+    .cart .sub-total-and-checkout{
+        flex-direction: column;
+        /* border:2px solid blue; */
+        width:95%;
+        text-align: center;
+        margin:2em auto;
+    }
+    .cart .sub-total-and-checkout .sub-total{
+        margin:0 0 0 0;
+    }
+    .cart .sub-total-and-checkout .sub-total #desc{
+        justify-content: center;
+    }
+
+    .cart .sub-total-and-checkout .checkout button{
+        width:100%;
+
+    }
+    
+}

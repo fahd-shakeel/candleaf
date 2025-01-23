@@ -1,0 +1,141 @@
+.footer{
+    background-color: #272727;
+    /* border:2px solid red;
+    
+    both padding 2em
+    */
+    padding:50px;  
+}
+
+.footer .footer-area{
+    width:80%; 
+    /* border:2px solid red; */
+    margin:0 auto;
+    border-top: 1.5px solid white;
+    display: flex;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+}
+
+.footer .footer-area .footer-left-area{
+    /* border:2px solid blue; */
+    width:15.5em;
+    /* width:32%; */
+}
+
+.footer .footer-area .footer-left-area #footer-image{
+    width:15.5em;
+    height:auto;
+}
+
+.footer .footer-area .footer-left-area p{
+    font-family: "Poppins";
+    color:white;
+    font-weight: 200;
+    font-size: 1em;
+}
+
+.footer .footer-area .footer-right-area{
+    /* border:2px solid blue; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .footer-area .footer-right-area .discovery-section{
+    display: flex;
+    flex-direction: column;
+    margin-top:2vw;
+    margin-left:1vw;
+    margin-right:1vw;
+    margin-bottom:1vw;
+    /* border:2px solid yellow; */
+}
+
+.footer .footer-area .footer-right-area p{
+    color:#56B280;
+    font-size: 1em;
+    font-family: "Poppins";
+    font-weight: 500;
+    margin:1em;
+}
+
+.footer .footer-area .footer-right-area a{
+    color:white;
+    font-size:1em;
+    font-family: "Poppins";
+    font-weight:300;
+    text-decoration: none;
+    margin:1em;
+}
+
+.footer .footer-area .footer-right-area .about-section{
+    display: flex;
+    flex-direction: column;
+    margin-top:2vw;
+    margin-left:1vw;
+    margin-right:1vw;
+    margin-bottom:1vw;
+}
+
+.footer .footer-area .footer-right-area .info-section{
+    display: flex;
+    flex-direction: column;
+    margin-top:2vw;
+    margin-left:1vw;
+    margin-right:1vw;
+    margin-bottom:1vw;
+}
+
+.footer-note{
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    /* border:2px solid red; */
+}
+
+.footer-note div{
+    margin-top:0.5em;
+    /* margin-bottom:auto; */
+}
+
+.footer-note p{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size:1em;
+    color:#272727;
+}
+
+
+
+@media (max-width:550px) {
+
+
+    .footer .footer-area{
+        width:95%;
+        /* border:2px solid red; */
+        margin:0 auto;
+        border-top: 1.5px solid white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer .footer-area .footer-left-area{
+        width:90%;
+    }
+
+    .footer .footer-area .footer-right-area{
+        justify-content: space-between;
+    }
+
+    .footer-note{
+        width:95%;
+        justify-content: center;
+    }
+
+    .footer-note #designed-by{
+        display: none;
+    }
+
+}

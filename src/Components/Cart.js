@@ -15,7 +15,7 @@ import candleSpicedMint from "../assets/images/candle-spiced-mint.svg"
 import candleSummerCherries from "../assets/images/candle-summer-cherries.svg"
 import candleSweetStrawberry from "../assets/images/candle-sweet-strawberry.svg"
 import candleVedanomsCarrens from "../assets/images/candle-vedanom-carrens.svg"
-import { response } from 'express';
+
 /*****************end-of-import-images*************/
 const Cart = () => {
   const navigate = useNavigate();

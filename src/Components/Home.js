@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Home.css";
-import bgImage from "../assets/images/bg-image.svg";
+import bgImage from "../assets/images/bg-image.jpeg";
 import benefitSectionImage from "../assets/images/benefits-section-image.svg";
 import checkmark from "../assets/images/checkmark-circle.svg";
 import ProductLayout from './ProductLayout';
@@ -9,14 +9,14 @@ import Layout from './Layout';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 //**************import-of-images****************
-import candleCleanLavender from "../assets/images/candle-clean-lavander.svg"
-import candleCoolBlueberries from "../assets/images/candle-cool-blueberries.svg"
-import candleFragrentCinnamon from "../assets/images/candle-fragrent-cinnamon.svg"
-import candleJuicyLemon from "../assets/images/candle-juicy-lemon.svg"
-import candleSpicedMint from "../assets/images/candle-spiced-mint.svg"
-import candleSummerCherries from "../assets/images/candle-summer-cherries.svg"
-import candleSweetStrawberry from "../assets/images/candle-sweet-strawberry.svg"
-import candleVedanomsCarrens from "../assets/images/candle-vedanom-carrens.svg"
+import candleCleanLavender from "../assets/images/candle-clean-lavander.jpeg"
+import candleCoolBlueberries from "../assets/images/candle-cool-blueberries.jpeg"
+import candleFragrentCinnamon from "../assets/images/candle-fragrent-cinnamon.jpeg"
+import candleJuicyLemon from "../assets/images/candle-juicy-lemon.jpeg"
+import candleSpicedMint from "../assets/images/candle-spiced-mint.jpeg"
+import candleSummerCherries from "../assets/images/candle-summer-cherries.jpeg"
+import candleSweetStrawberry from "../assets/images/candle-sweet-strawberry.jpeg"
+import candleVedanomsCarrens from "../assets/images/candle-vedanom-carrens.jpeg"
 //************end-import-images********************
 
 //**********import-of-testimonial-images******************/

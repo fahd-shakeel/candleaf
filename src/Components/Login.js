@@ -31,12 +31,19 @@ const Login = () => {
     event.preventDefault();
   }
 
+  const backClick=()=>{
+    navigate('/')
+  }
 
   return (
     <div id="login">
       
       <div id="heading">
         <p className="poppins med">Candleaf</p>
+      </div>
+
+      <div id='back-button'>
+        <button onClick={backClick}>Back</button>
       </div>
 
       <div id="username-password">

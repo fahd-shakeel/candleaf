@@ -6,6 +6,7 @@ import {useCookies} from 'react-cookie';
 
 const Login = () => {
   // const domain = "https://candleaf-backend.vercel.app"
+  const server_uri = "http://localhost:3001"
 
   const product_id = localStorage.getItem('product_id');
 
@@ -17,7 +18,7 @@ const Login = () => {
   const [password, setPassword] = useState(""); 
 
   const login = async()=>{
-    await axios.post("https://candleaf-backend.vercel.app/login",{email,password})
+    await axios.post(`${server_uri}/login`,{email,password})
     .then(res=>{
       // setCookie('user_id',res.data.user_id)
       // setCookie('token',res.data.token)

@@ -6,6 +6,10 @@ const jwt = require('jsonwebtoken');
 //     res.send("This is from API");
 // })
 
+router.route('/').get((req,res)=>{
+    res.send("server APIs")
+})
+
 router.route('/signup').post(async (req,res)=>{
     const email=req.body.email;
     const password = req.body.password;

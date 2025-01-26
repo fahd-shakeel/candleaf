@@ -5,6 +5,8 @@ import axios from "axios"
 import {useCookies} from 'react-cookie';
 
 const Login = () => {
+  const domain = "https://candleaf-backend-git-main-fahd-shakeels-projects.vercel.app"
+
   const product_id = localStorage.getItem('product_id');
 
   const navigate = useNavigate();
@@ -15,7 +17,7 @@ const Login = () => {
   const [password, setPassword] = useState(""); 
 
   const login = async()=>{
-    await axios.post("http://localhost:3001/login",{email,password})
+    await axios.post(`${domain}/login`,{email,password})
     .then(res=>{
       setCookie('user_id',res.data.user_id,{secure:true})
       setCookie('token',res.data.token,{secure:true})

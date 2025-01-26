@@ -18,6 +18,8 @@ import candleVedanomsCarrens from "../assets/images/candle-vedanom-carrens.svg"
 
 /*****************end-of-import-images*************/
 const Cart = () => {
+  const domain = "https://candleaf-backend-git-main-fahd-shakeels-projects.vercel.app"
+
   const navigate = useNavigate();
   const [quantity, setQuantity] = useState(localStorage.getItem('product_quantity'));
 
@@ -83,21 +85,21 @@ const Cart = () => {
 
   const handleClick=()=>{
     
-    // localStorage.setItem('product_quantity', quantity)
-    // const product_quantity = Number(localStorage.getItem('product_quantity'))
-    // const product_id = localStorage.getItem('product_id')
-    // const product_name = localStorage.getItem('product_name')
-    // const product_price = localStorage.getItem('product_price')
+    localStorage.setItem('product_quantity', quantity)
+    const product_quantity = Number(localStorage.getItem('product_quantity'))
+    const product_id = localStorage.getItem('product_id')
+    const product_name = localStorage.getItem('product_name')
+    const product_price = localStorage.getItem('product_price')
 
-    // const data = {product_quantity, product_id, product_name, product_price}
-    // console.log(product_quantity)
+    const data = {product_quantity, product_id, product_name, product_price}
+    console.log(product_quantity)
 
-    // axios.post("http://localhost:3001/cart/:id",data)
-    // .then(response=>alert(response))
-    // .catch(reponse=>alert(reponse))
+    axios.post(`${domain}/cart/:id`,data)
+    .then(response=>alert(response))
+    .catch(reponse=>alert(reponse))
 
-    // navigate('/shipping/'+id)
-    // console.log(quantity)
+    navigate('/shipping/'+id)
+    console.log(quantity)
   } 
   
   return (

@@ -20,6 +20,8 @@ import candleVedanomsCarrens from "../assets/images/candle-vedanom-carrens.svg"
 /*****************end-of-import-images*************/
 
 const Authentication = () => {
+  const domain = "https://candleaf-backend-git-main-fahd-shakeels-projects.vercel.app"
+
   const [userEmail, setUserEmail] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("")
@@ -113,7 +115,7 @@ const Authentication = () => {
       userEmail, firstName, lastName, addressAndNumber, shippingNote, city, postalCode, country
     }
 
-    axios.post("http://localhost:3001/authentication/:id",data, {withCredentials:true})
+    axios.post(`${domain}/:id`,data, {withCredentials:true})
     .then((response)=>{
       setCookie('cutomer_id',response.data)
       navigate(`/cart/${id}`)

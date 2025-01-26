@@ -4,6 +4,8 @@ import "./Signup.css"
 import axios from "axios";
 
 const Signup = () => {
+  const domain = "https://candleaf-backend-git-main-fahd-shakeels-projects.vercel.app"
+
   const navigate = useNavigate();
   
   const [email, setEmail] = useState("");
@@ -19,7 +21,7 @@ const Signup = () => {
       alert("Check confirm password again!")
     }
     else{
-        await axios.post("http://localhost:3001/signup",{"email":email,"password":password})
+        await axios.post(`${domain}/signup`,{"email":email,"password":password})
         .then(res=>alert(res.data))
         .catch(err=>alert(err))
         navigate('/login')

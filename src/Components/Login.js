@@ -5,7 +5,7 @@ import axios from "axios"
 import {useCookies} from 'react-cookie';
 
 const Login = () => {
-  const domain = "https://candleaf-backend.vercel.app/"
+  const domain = "https://candleaf-backend.vercel.app"
 
   const product_id = localStorage.getItem('product_id');
 

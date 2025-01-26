@@ -8,7 +8,7 @@ const authentication = require('./routes/authentication.route')
 const product = require('./routes/product.route')
 // require("../backend/webpack.config")
 
-const domain = "https://candleaf-backend-git-main-fahd-shakeels-projects.vercel.app"
+const domain = "https://candleaf-backend.vercel.app/"
 
 app.use(cookieParser());
 app.use(cors({origin:`${domain}`,credentials:true}));

@@ -19,8 +19,8 @@ const Login = () => {
   const login = async()=>{
     await axios.post(`${domain}/login`,{email,password})
     .then(res=>{
-      setCookie('user_id',res.data.user_id,{secure:true})
-      setCookie('token',res.data.token,{secure:true})
+      setCookie('user_id',res.data.user_id)
+      setCookie('token',res.data.token)
       navigate(`/product/${product_id}`)
     })
     .catch(err=>alert(err))

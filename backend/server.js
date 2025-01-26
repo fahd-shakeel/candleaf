@@ -11,7 +11,8 @@ const product = require('./routes/product.route')
 const domain = "https://candleaf-backend.vercel.app/"
 
 app.use(cookieParser());
-app.use(cors({origin:domain,credentials:true}));
+// app.use(cors({origin:domain,credentials:true}));
+app.use(cors());
 app.use(express.json());
 
 const uri = "mongodb+srv://new_user_fahd:fahd@cluster0.hyeth5m.mongodb.net/candleaf?retryWrites=true&w=majority";

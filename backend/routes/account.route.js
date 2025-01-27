@@ -28,6 +28,7 @@ router.route('/login').post(async (req,res)=>{
 
     await Account.findOne({email:email})
     .then(response=>{
+        console.log(response)
         if(password===response.password){
             // window.sessionStorage.setItem("user_id",response.id)
             payload = JSON.stringify(response)

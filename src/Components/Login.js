@@ -23,7 +23,7 @@ const Login = () => {
     .then(res=>{
       setCookie('user_id',res.data.user_id,{secure:true})
       setCookie('token',res.data.token,{secure:true})
-      navigate(`./product/${product_id}`)
+      navigate(`/product/${product_id}`)
     })
     .catch(err=>alert(err))
   }

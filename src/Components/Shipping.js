@@ -4,6 +4,8 @@ import "./Shipping.css";
 // import candleImage from "../assets/images/candle-spiced-mint.svg";
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { useState } from 'react';
 
 /*****************start-of-import-images*************/
 import candleCleanLavender from "../assets/images/candle-clean-lavander.svg"
@@ -16,8 +18,14 @@ import candleSweetStrawberry from "../assets/images/candle-sweet-strawberry.svg"
 import candleVedanomsCarrens from "../assets/images/candle-vedanom-carrens.svg"
 /*****************end-of-import-images*************/
 
+// const domain = "http://localhost:3001"
+const domain = "https://candleaf-navy.vercel.app"
+
 const Shipping = () => {
   let {id}=useParams();
+
+  const [shippingContact, setShippingContact] = useState("");
+  const [shippingAddress, setShippingAddress] = useState("");
 
   const product_details=[
     {
@@ -72,6 +80,16 @@ const Shipping = () => {
 
   let currentProduct = [];
 
+  const data = {
+    shippingAddress, shippingContact, id
+  }
+
+  function handlePayment (){
+   axios.post(`${domain}/shipping/:id`,data, {withCredentials:true})
+   .then(response=>alert("Payment gateway will be added shortly"))
+   .catch(err=>alert(err))
+  }
+
   const product=()=>{
     return product_details.map((details)=>{
       if(id===details.id){
@@ -79,6 +97,7 @@ const Shipping = () => {
       }
     })
   }
+
 
   return (
     <Layout>
@@ -104,7 +123,7 @@ const Shipping = () => {
                         <form className='form' id="form-area">
                             <div className="contact">
                                 <p>Contact: </p>
-                                <input type='textbox' placeholder='Edit'/>
+                                <input onChange={(e)=>setShippingContact(e.target.value)} type='textbox' placeholder='Edit'/>
                                 
                             </div>
 
@@ -112,7 +131,7 @@ const Shipping = () => {
                             
                             <div className='ship'>
                                 <p>Ship to: </p>
-                                <input type='textbox' placeholder='Edit'/>
+                                <input onChange={(e)=>setShippingAddress(e.target.value)} type='textbox' placeholder='Edit'/>
                             </div>
 
                             
@@ -130,7 +149,7 @@ const Shipping = () => {
 
                         <div className='cart-and-shopping'>
                           <Link to={'/cart/'+id}><a id="back-to-cart" href={`/cart/`+id}><p>Back to cart</p></a></Link>
-                          <a href={'/payment/'+id} id="link-of-btn"><button id="btn-shipping" className='btn' type='button'><p className='roboto med'>Go to Payment</p></button></a>
+                          <a id="link-of-btn"><button id="btn-shipping" className='btn' type='button' onClick={handlePayment}><p className='roboto med'>Go to Payment</p></button></a>
                         </div>
                 </div>
             </div>

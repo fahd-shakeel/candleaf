@@ -1,17 +1,16 @@
 const mongoose = require('mongoose');
-import Account from "./account.model";
-import Customer from "./customer.model"
 
 const productSchema = new mongoose.Schema({
     user_id:{
-        type:mongoose.Schema.Types.ObjectId,ref:Account, require:true
+        type:mongoose.Schema.Types.ObjectId,ref:'Account'
     },
     customer_id:{
-        type:mongoose.Schema.Types.ObjectId, ref:Customer, require:true
+        type:mongoose.Schema.Types.ObjectId, ref:'Customer'
     },
-    product_name:String,
-    product_price:Number,
-    product_quantity:Number
+    product_id:{type:String},
+    product_name:{type:String},
+    product_price:{type:Number},
+    product_quantity:{type:Number}
 })
 
 const Product = mongoose.model('Product',productSchema);

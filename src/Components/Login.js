@@ -6,7 +6,7 @@ import {useCookies} from 'react-cookie';
 
 const Login = () => {
   const domain = "https://candleaf-backend.vercel.app"
-  // const server_uri = "http://localhost:3001"
+  // const domain = "http://localhost:3001"
 
   const product_id = localStorage.getItem('product_id');
 
@@ -23,7 +23,8 @@ const Login = () => {
     .then(res=>{
       setCookie('user_id',res.data.user_id,{secure:true})
       setCookie('token',res.data.token,{secure:true})
-      navigate(`/product/${product_id}`)
+      navigate('/')
+      // navigate(`/product/${product_id}`)
     })
     .catch(err=>alert(err))
   }

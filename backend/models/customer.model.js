@@ -1,12 +1,4 @@
 const mongoose = require('mongoose');
-// import {Account} from "./account.model";
-
-// const addressDetailsSchema = new mongoose.Schema({
-//     city:String,
-//     postal_code:String,
-//     country:String
-// })
-
 
 const customerSchema = new mongoose.Schema({
     user_id:{

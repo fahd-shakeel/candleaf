@@ -16,13 +16,14 @@ router.route('/').post(async(req,res)=>{
     const country = req.body.country;
     const shipping_note=req.body.shippingNote;
     const user_id = req.cookies.user_id;
+    let customer_id = "";
 
     const id = Account.findByIdAndUpdate({_id:user_id},{user_email:user_email})
-    // .then((response=>res.send(response)))
-    // .catch((err)=>res.send(err))
-
+    .then((response=>console.log("account found")))
+    .catch((err)=>console.log("account not found"))
+ 
     const data = new Customer({
-        first_name, last_name, customer_address_and_number, shipping_note, city, postal_code, country
+        user_id, customer_address_and_number, first_name, last_name, city, postal_code, country, shipping_note
     })
 
     await data.save()

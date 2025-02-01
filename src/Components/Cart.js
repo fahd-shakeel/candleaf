@@ -18,7 +18,9 @@ import candleVedanomsCarrens from "../assets/images/candle-vedanom-carrens.svg"
 
 /*****************end-of-import-images*************/
 const Cart = () => {
-  const domain = "https://candleaf-backend-git-main-fahd-shakeels-projects.vercel.app"
+  const domain = "https://candleaf-backend.vercel.app"
+
+  // const domain = "http://localhost:3001"
 
   const navigate = useNavigate();
   const [quantity, setQuantity] = useState(localStorage.getItem('product_quantity'));
@@ -92,14 +94,12 @@ const Cart = () => {
     const product_price = localStorage.getItem('product_price')
 
     const data = {product_quantity, product_id, product_name, product_price}
-    console.log(product_quantity)
 
-    axios.post(`${domain}/cart/:id`,data)
-    .then(response=>alert(response))
-    .catch(reponse=>alert(reponse))
-
-    navigate('/shipping/'+id)
-    console.log(quantity)
+    axios.post(`${domain}/cart/:id`,data, {withCredentials:true})
+    .then(response=>{
+      navigate('/shipping/'+id)
+    })
+    .catch(err=>alert(err))
   } 
   
   return (

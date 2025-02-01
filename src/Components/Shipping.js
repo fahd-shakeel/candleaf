@@ -19,7 +19,7 @@ import candleVedanomsCarrens from "../assets/images/candle-vedanom-carrens.svg"
 /*****************end-of-import-images*************/
 
 // const domain = "http://localhost:3001"
-const domain = "https://candleaf-navy.vercel.app"
+const domain = "https://candleaf-backend.vercel.app"
 
 const Shipping = () => {
   let {id}=useParams();
